@@ -183,6 +183,19 @@ button {
     rgba(50, 64, 154, 0) 304.62%
   );
 }
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  gap: 1.4rem;
+  padding: 0.2rem 0.9rem;
+  border-radius: 10px;
+  font-size: 13px;
+}
+.date img {
+  cursor: pointer;
+}
 
 .dashboard__right--three {
   border-radius: 1rem;
