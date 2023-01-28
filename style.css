@@ -214,7 +214,7 @@ button {
 @media only screen and (max-width: 767px) {
   .dashboard__content {
     flex-direction: column;
-    padding: 0;
+    padding: 0.8rem;
   }
   .dashboard__content--left,
   .dashboard__content--right {
@@ -224,7 +224,7 @@ button {
   .i {
     display: flex;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1.8rem;
     padding-top: 3rem;
   }
   .dashboard__right--one {
@@ -240,8 +240,10 @@ button {
   }
   .dashboard__one--one div {
     display: flex;
-    gap: 0.5rem;
-    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    gap: 0.7rem;
+
     padding: 1rem 0;
   }
 }
