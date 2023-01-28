@@ -76,6 +76,7 @@ body {
 .i {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2.6rem;
   padding-top: 4rem;
 }
@@ -207,4 +208,40 @@ button {
     rgba(75, 76, 141, 0.715402) 197.31%,
     rgba(139, 107, 107, 0) 643.89%
   );
+}
+
+/*MEDIA SCREEN SIZES FOR MOBILE*/
+@media only screen and (max-width: 767px) {
+  .dashboard__content {
+    flex-direction: column;
+    padding: 0;
+  }
+  .dashboard__content--left,
+  .dashboard__content--right {
+    width: 100%;
+    padding: 3.7rem 0;
+  }
+  .i {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    padding-top: 3rem;
+  }
+  .dashboard__right--one {
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .dashboard__one--one {
+    padding: 2rem;
+  }
+  .dashboard__one--two {
+    padding: 2rem;
+  }
+  .dashboard__one--one div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1rem 0;
+  }
 }
