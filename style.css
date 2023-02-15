@@ -238,6 +238,12 @@ button {
     gap: 1.2rem;
     padding-top: 3rem;
   }
+  .left__icon--one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+  }
   .dashboard__right--one {
     gap: 0rem;
   }
