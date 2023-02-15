@@ -96,22 +96,26 @@ body {
 .left__icon--one p {
   font-size: 14px;
 }
-.dashboard__left--logout {
+.dashboard__left--logout,
+#mobile {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
   margin-top: 6.5rem;
 }
-.dashboard__left--logout img {
+.dashboard__left--logout img,
+#mobile img {
   width: 20px;
   cursor: pointer;
 }
-.dashboard__left--logout p {
+.dashboard__left--logout p,
+#mobile p {
   font-size: 12px;
 }
 .left__icon--one p:hover,
-.dashboard__left--logout p:hover {
+.dashboard__left--logout p:hover,
+#mobile p:hover {
   border-bottom: 1.4px solid var(--color-primary);
   cursor: pointer;
 }
@@ -258,14 +262,14 @@ button {
     background-color: var(--color-white);
     border: none;
   }
-  .dashboard__left--logout {
-    margin: 1rem 0;
-  }
-  .dashboard__left--logout p {
-    font-size: 15px;
-  }
   #mobile {
     display: flex;
+  }
+  #mobile {
+    margin: 1rem 0;
+  }
+  #mobile p {
+    font-size: 15px;
   }
   #desktop {
     display: none;
