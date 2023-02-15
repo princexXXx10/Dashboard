@@ -119,6 +119,9 @@ body {
   border-bottom: 1.4px solid var(--color-primary);
   cursor: pointer;
 }
+#mobile {
+  display: none;
+}
 
 .dashboard__right--one {
   display: flex;
@@ -218,10 +221,6 @@ button {
   );
 }
 
-#mobile {
-  display: none;
-}
-
 /*MEDIA SCREEN SIZES FOR MOBILE*/
 @media only screen and (max-width: 767px) {
   .dashboard__content {
@@ -264,9 +263,8 @@ button {
   }
   #mobile {
     display: flex;
-  }
-  #mobile {
     margin: 1rem 0;
+    gap: 1rem;
   }
   #mobile p {
     font-size: 12px;
