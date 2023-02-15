@@ -118,8 +118,9 @@ body {
 
 .dashboard__right--one {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
 .dashboard__one--one,
@@ -129,26 +130,29 @@ body {
   border-radius: 1rem;
 }
 .dashboard__one--one {
-  padding: 2.7rem 6rem 1.5rem 2rem;
+  padding: 2rem 1rem;
+  width: 48%;
   background: linear-gradient(180deg, #32409a 0%, rgba(0, 33, 245, 0) 431.35%);
 }
-.dashboard__one--one p {
-  font-size: 15px;
+.dashboard__one--one h5,
+.dashboard__one--two h5 {
+  padding-top: 0.3rem;
+  font-size: 18px;
+}
+.dashboard__one--one p,
+.dashboard__one--two p {
+  font-size: 13px;
 }
 
 .dashboard__one--one div {
   display: flex;
-  gap: 2rem;
   align-items: center;
-  padding: 1rem 0;
+  gap: 3.5rem;
+  padding-top: 2rem;
 }
-.dashboard__one--one div,
-.dashboard__one--two div {
-  margin-top: 1rem;
-}
-
 .dashboard__one--two {
-  padding: 2.7rem 12rem 1.5rem 2rem;
+  width: 48%;
+  padding: 2rem 1rem;
   background: linear-gradient(
     123.23deg,
     #32409a 30.21%,
@@ -156,12 +160,12 @@ body {
   );
 }
 .dashboard__one--two div {
-  padding: 1rem 0;
+  padding-top: 2rem;
 }
 
 button {
-  padding: 0.5rem 1.5rem;
-  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
   cursor: pointer;
   background-color: var(--color-white);
   border: none;
@@ -210,6 +214,10 @@ button {
   );
 }
 
+#mobile {
+  display: none;
+}
+
 /*MEDIA SCREEN SIZES FOR MOBILE*/
 @media only screen and (max-width: 767px) {
   .dashboard__content {
@@ -228,24 +236,38 @@ button {
     padding-top: 3rem;
   }
   .dashboard__right--one {
-    gap: 1rem;
-    width: 100%;
+    gap: 0rem;
   }
-
-  .dashboard__one--one {
-    padding: 1rem;
+  .dashboard__one--one,
+  .dashboard__one--two {
+    padding: 1.5rem 1rem;
   }
   .dashboard__one--one h5,
   .dashboard__one--two h5 {
     font-size: 12px;
   }
-
-  .dashboard__one--two {
-    padding: 0.8rem 1rem 0.4rem;
-  }
   .dashboard__one--one div {
-    display: flex;
     gap: 0.5rem;
-    padding: 2rem 0 0.4rem;
+    justify-content: space-between;
+  }
+  button {
+    padding: 0.4rem 0.8rem;
+    border-radius: 25px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: var(--color-white);
+    border: none;
+  }
+  .dashboard__left--logout {
+    margin: 1rem 0;
+  }
+  .dashboard__left--logout p {
+    font-size: 15px;
+  }
+  #mobile {
+    display: flex;
+  }
+  #desktop {
+    display: none;
   }
 }
