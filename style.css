@@ -165,7 +165,15 @@ body {
   padding: 2rem 1rem;
 }
 .dashboard__one--two div {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  text-decoration: underline 1px solid white;
+  cursor: pointer;
   padding-top: 2rem;
+}
+.referralLink {
+  font-size: 8px;
 }
 
 button {
@@ -250,9 +258,13 @@ button {
   .dashboard__one--two h5 {
     font-size: 12px;
   }
-  .dashboard__one--one div {
+  .dashboard__one--one div,
+  .dashboard__one--two div {
     gap: 0.5rem;
     justify-content: space-between;
+  }
+  .referralLink {
+    font-size: 5px;
   }
   button {
     padding: 0.4rem 0.8rem;
