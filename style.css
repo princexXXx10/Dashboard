@@ -190,16 +190,25 @@ button {
 }
 
 .dashboard__right--two {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.5rem 160px 1.5rem;
+  padding: 1rem 1.5rem 0rem;
   border-radius: 1rem;
   background: linear-gradient(
     132.99deg,
     #32409a 25.88%,
     rgba(50, 64, 154, 0) 304.62%
   );
+  height: 11rem;
+}
+.noName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.noNameTwo {
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+  font-size: 0.81rem;
 }
 .date {
   display: flex;
@@ -217,7 +226,7 @@ button {
 
 .dashboard__right--three {
   border-radius: 1rem;
-  padding: 1rem 1.5rem 160px 1.5rem;
+  padding: 1rem 1.5rem 0rem;
   background: linear-gradient(
     137.33deg,
     #32409a 23.98%,
@@ -225,6 +234,31 @@ button {
     rgba(75, 76, 141, 0.715402) 197.31%,
     rgba(139, 107, 107, 0) 643.89%
   );
+}
+.dashboard__three--table {
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  height: 11rem;
+}
+.dashboard__three--table::-webkit-scrollbar {
+  width: 3px;
+}
+.dashboard__three--table::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;
+}
+table {
+  width: 100%;
+  padding-top: 1rem;
+  color: white;
+}
+th {
+  font-size: 13px;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+td {
+  font-size: 11px;
 }
 
 /*MEDIA SCREEN SIZES FOR MOBILE*/
@@ -284,5 +318,13 @@ button {
   }
   #desktop {
     display: none;
+  }
+  th {
+    font-size: 10px;
+    padding-bottom: 0.5rem;
+    text-align: left;
+  }
+  td {
+    font-size: 8px;
   }
 }
