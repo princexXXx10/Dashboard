@@ -341,6 +341,14 @@ td {
   .dashboard__one--two h5 {
     font-size: 12px;
   }
+  .dropbtn {
+    gap: 0.7rem;
+    padding: 0rem 0.7rem;
+    font-size: 9.6px;
+  }
+  .dropdown-content {
+    min-width: 112px;
+  }
   .referralLink {
     font-size: 5px;
   }
