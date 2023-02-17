@@ -12,15 +12,15 @@
       <div class="dashboard__wrapper">
         <div class="dashboard__content">
           <div class="dashboard__content--left">
-            <div class="u">
-              <img src="images/Person.png" class="image1" />
-              <div class="underscore">
+            <div class="userDashboard">
+              <img src="images/Person.png" class="user__image" />
+              <div class="userDashboard__name">
                 <p>Hi James</p>
-                <img src="images/Hi.png" class="hiii" />
+                <img src="images/Hi.png" class="userDashboard__wave" />
               </div>
             </div>
 
-            <div class="i">
+            <div class="userDashboard__panel">
               <div class="left__icon--one">
                 <img src="images/Dashboard.png" />
                 <p>Dashboard</p>
@@ -62,15 +62,25 @@
             </div>
 
             <div class="dashboard__right--two">
-              <div class="noName">
+              <div class="dashboard__two--head">
                 <h2>History</h2>
-                <div class="date">
-                  <p>Week</p>
-                  <img src="images/DropDown.png" alt="" />
+                <div class="dropdown">
+                  <div onclick="myFunction()" class="dropbtn date">
+                    Last 7 days <img src="images/DropDown.png" alt="" />
+                  </div>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Today</a>
+                    <a href="#">Yesterday</a>
+                    <a href="#">This week</a>
+                    <a href="#">Last 7 days</a>
+                    <a href="#">This month</a>
+                    <a href="#">Last 30 days</a>
+                    <a href="#"> All time</a>
+                  </div>
                 </div>
               </div>
 
-              <div class="noNameTwo">
+              <div class="dashboard__two--body">
                 <p>No History to display yet</p>
               </div>
             </div>
@@ -181,5 +191,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
