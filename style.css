@@ -343,8 +343,8 @@ td {
   }
   .dropbtn {
     gap: 0.7rem;
-    padding: 0rem 0.7rem;
-    font-size: 9.6px;
+    padding: 0.2rem 0.8rem;
+    font-size: 10px;
   }
   .dropdown-content {
     min-width: 112px;
