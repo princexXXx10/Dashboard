@@ -344,7 +344,7 @@ td {
   .dropbtn {
     gap: 0.7rem;
     padding: 0.2rem 0.8rem;
-    font-size: 10px;
+    font-size: 11px;
   }
   .dropdown-content {
     min-width: 112px;
